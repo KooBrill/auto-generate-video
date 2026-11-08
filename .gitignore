@@ -1,0 +1,10 @@
+node_modules
+out/*
+data/*
+logs/*
+.env
+*.log
+jobs/pending/*.json
+jobs/done/*.json
+jobs/failed/*.json
+!**/.gitkeep

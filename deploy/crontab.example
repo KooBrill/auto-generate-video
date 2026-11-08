@@ -1,0 +1,7 @@
+# Jalankan pipeline tiap hari jam 09:00 (zona waktu VPS: timedatectl set-timezone Asia/Jakarta).
+# - flock mencegah dua run berjalan bersamaan.
+# - docker compose run -T wajib memakai -T karena cron tidak punya terminal.
+# Ganti /opt/video-autopost dengan lokasi project di VPS.
+#
+# Pasang dengan: crontab -e
+0 9 * * * cd /opt/video-autopost && flock -n /tmp/video-autopost.lock docker compose run --rm -T app >> logs/cron.log 2>&1

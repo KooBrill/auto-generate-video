@@ -1,0 +1,21 @@
+{
+  "props": {
+    "title": "3 Kebiasaan Kecil yang Mengubah Harimu",
+    "subtitle": "Mulai hari ini",
+    "points": [
+      "Bangun 30 menit lebih awal dan jangan buka HP dulu.",
+      "Tulis 3 prioritas sebelum mulai kerja.",
+      "Jalan kaki 10 menit setiap selesai makan siang."
+    ],
+    "cta": "Follow untuk tips harian"
+  },
+  "youtube": {
+    "title": "3 Kebiasaan Kecil yang Mengubah Harimu",
+    "description": "Tiga kebiasaan sederhana untuk memulai hari dengan lebih fokus.",
+    "tags": ["produktivitas", "kebiasaan", "tips"]
+  },
+  "instagram": {
+    "caption": "3 kebiasaan kecil yang mengubah harimu 👇\n\n#produktivitas #kebiasaan #tips"
+  },
+  "targets": ["mock"]
+}

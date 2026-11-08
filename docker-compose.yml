@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    image: video-autopost:latest
+    env_file: .env
+    environment:
+      TZ: Asia/Jakarta
+    volumes:
+      - ./jobs:/app/jobs     # antrean job (pending/done/failed)
+      - ./out:/app/out       # hasil render MP4
+      - ./data:/app/data     # state job, token Instagram, lock
+      - ./public:/app/public:ro  # musik/gambar, bisa diganti tanpa build ulang
+    # Beri jatah CPU dan memori secara eksplisit supaya render stabil.
+    cpus: 2
+    mem_limit: 3g

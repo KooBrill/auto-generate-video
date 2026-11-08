@@ -1,0 +1,10 @@
+node_modules
+out
+data
+logs
+jobs/pending
+jobs/done
+jobs/failed
+.env
+.git
+*.log
